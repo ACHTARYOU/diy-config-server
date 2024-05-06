@@ -4,7 +4,7 @@ spring:
       ddl-auto: update
     database: mysql
   datasource:
-    url: ${LOCAL_MYSQL_JDBC:jdbc:mysql://localhost:3306/microservice?useSSL=false&serverTimezone=UTC}
+    url: ${LOCAL_MYSQL_JDBC:jdbc:mysql://localhost:3306/microservice?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC}
     username: ${MYSQL_USER:mysqluser}
     password: ${MYSQL_PASSWORD:55}
 eureka:
